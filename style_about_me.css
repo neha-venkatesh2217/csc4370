@@ -1,0 +1,38 @@
+/*
+COLOR PALETTE:
+Lavender: #E4C8F7
+Dark Purple: #2A0432
+Medium Purple: #8E44AD
+Light Purple: #F3E5F5
+White: #FFFFFF
+*/
+
+body {
+    background-color: #E4C8F7;
+    color: #2A0432;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    color: #2A0432;
+}
+
+h2 {
+    color: #8E44AD;
+}
+
+.p1 {
+    color: #5f176e;
+}
+
+.p2 {
+    color:#b22acd
+}
+
+.p3 {
+    color:#40044b
+}
+
+a {
+    color: #8E44AD;
+}
