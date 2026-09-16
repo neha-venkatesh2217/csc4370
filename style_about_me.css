@@ -1,15 +1,20 @@
 /*
 COLOR PALETTE:
-Lavender: #E4C8F7
-Dark Purple: #2A0432
-Medium Purple: #8E44AD
-Light Purple: #F3E5F5
-White: #FFFFFF
+maroon
+#2D0000 
+dark red
+#6D0808
+sage green
+#757D6F
+cream white
+#EEEAD7
+
 */
 
+/*
 body {
-    background-color: #E4C8F7;
-    color: #2A0432;
+    background-color: #6D0808;
+    color: #2D0000;
     font-family: Arial, sans-serif;
 }
 
@@ -36,3 +41,137 @@ h2 {
 a {
     color: #8E44AD;
 }
+
+css
+/*
+    COLOR PALETTE
+    Maroon: #2D0000
+    Dark Red: #6D0808
+    Sage Green: #757D6F
+    Cream White: #EEEAD7
+*/
+
+
+/* Basic page styling */
+body {
+    background-color: #EEEAD7;
+    color: #2D0000;
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+
+/* Header */
+header {
+    background-color: #2D0000;
+    color: #EEEAD7;
+    padding: 20px;
+}
+
+
+/* Page title */
+h1 {
+    margin: 0 0 15px 0;
+}
+
+
+/*
+use flex box for navigation layout- linking horizontally
+*/
+nav ul {
+    display: flex;
+    gap: 25px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* navigation links colors */
+nav a {
+    color: #EEEAD7;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+/* hover function for links */
+nav a:hover {
+    color: #757D6F;
+    text-decoration: underline;
+}
+
+
+/*
+    MAIN PAGE LAYOUT
+
+    Flexbox creates two columns:
+    - About content
+    - Interests sidebar
+*/
+.about-layout {
+    display: flex;
+    gap: 30px;
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+
+/* main about content*/
+.about-content {
+    flex: 2;
+    background-color: #EEEAD7;
+    border: 3px solid #6D0808;
+    padding: 25px;
+    border-radius: 10px;
+}
+
+
+/* sidebar */
+.about-sidebar {
+    flex: 1;
+    background-color: #757D6F;
+    color: #EEEAD7;
+    padding: 25px;
+    border-radius: 10px;
+}
+
+
+/* paragrpah styling */
+.about-content p {
+    line-height: 1.6;
+}
+
+
+/* sidebar links */
+.about-sidebar a {
+    color: #EEEAD7;
+    font-weight: bold;
+}
+
+
+/* footer */
+footer {
+    background-color: #6D0808;
+    color: #EEEAD7;
+    text-align: center;
+    padding: 15px;
+}
+
+
+/*
+    responsive layout- stack columns vertically whne screen becomes smaller
+*/
+@media (max-width: 700px) {
+
+    .about-layout {
+        flex-direction: column;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
